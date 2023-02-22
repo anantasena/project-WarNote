@@ -1,0 +1,61 @@
+name: warnote_app
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment:
+  sdk: ">=2.18.5 <3.0.0"
+
+dependencies:
+  bottom_navy_bar: ^6.0.0
+  carbon_icons: ^0.0.1+2
+  cloud_firestore: ^4.3.1
+  codicon: ^1.0.0
+  cupertino_icons: ^1.0.2
+  custom_navigation_bar: ^0.8.2
+  custom_navigator: ^0.3.0
+  data_table_2: ^2.3.10
+  email_validator: ^2.1.17
+  firebase_auth: 4.2.5
+  firebase_core: ^2.4.1
+  flutter:
+    sdk: flutter
+  flutter_launcher_icons: ^0.11.0
+  font_awesome_flutter: ^10.2.1
+  get: 4.6.5
+  google_fonts: ^3.0.1
+  iconify_flutter: ^0.0.5
+  intl: ^0.17.0
+  material_symbols: ^0.0.0
+  persistent_bottom_nav_bar_ccc: ^5.0.1
+  share_plus: ^6.3.1
+  unicons: ^2.1.0
+  url_launcher: ^6.1.9
+  validators: ^3.0.0
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter_icons:
+  android: launcher_icon
+  image_path: assets/logo-warnote.png
+  web:
+    image_path: assets/logo-warnote.png
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+    generate: true
+  windows:
+    image_path: assets/logo-warnote.png
+    generate: true
+    icon_size: 48
+  macos:
+    image_path: assets/logo-warnote.png
+    generate: true
+  ios: true
+  min_sdk_android: 21
+
+flutter:
+  assets:
+    - assets/
+  uses-material-design: true

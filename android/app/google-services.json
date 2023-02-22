@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "678825918726",
+    "project_id": "warnote-51569",
+    "storage_bucket": "warnote-51569.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678825918726:android:d5639e73739a4c10c2de87",
+        "android_client_info": {
+          "package_name": "com.example.warnote_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678825918726-mrf86pf210rgkkav0a04om4t6vip4a3o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm7i01KRPmvKv2alAGtAoC_dy-zvnRsCc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678825918726-mrf86pf210rgkkav0a04om4t6vip4a3o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
