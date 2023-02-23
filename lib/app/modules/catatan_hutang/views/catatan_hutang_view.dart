@@ -118,7 +118,7 @@ class CatatanHutangView extends State<PageHutang> {
                                             padding: const EdgeInsets.all(1.0),
                                             child: Center(
                                               child: Text(
-                                                "Rp${sumPenjualan}",
+                                                "Rp $sumPenjualan",
                                                 style: GoogleFonts.poppins(
                                                   textStyle: const TextStyle(
                                                     fontWeight: FontWeight.bold,
@@ -196,7 +196,7 @@ class CatatanHutangView extends State<PageHutang> {
               ),
               Padding(
                 padding: const EdgeInsets.only(
-                  top: 50,
+                  top: 88,
                 ),
                 child: Container(
                   width: 360,
@@ -245,6 +245,7 @@ class CatatanHutangView extends State<PageHutang> {
                             return listAllDocs.length > 0
                                 ? Flexible(
                                     child: ListView.builder(
+                                      scrollDirection: Axis.vertical,
                                       shrinkWrap: true,
                                       itemCount: listAllDocs.length,
                                       itemBuilder: (context, index) => Padding(

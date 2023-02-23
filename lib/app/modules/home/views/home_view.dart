@@ -7,7 +7,7 @@ import 'package:warnote_app/app/controllers/auth_controller_controller.dart';
 import 'package:warnote_app/app/modules/home/controllers/home_controller.dart';
 import 'package:get/get.dart';
 import 'package:warnote_app/app/routes/app_pages.dart';
-import 'package:share_plus/share_plus.dart';
+// import 'package:share_plus/share_plus.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -154,141 +154,135 @@ class Home extends State<HomeScreen> {
           child: ListView(
             children: <Widget>[
               Padding(
-                padding: const EdgeInsets.only(
-                  left: 20,
-                  top: 45,
-                  right: 20,
-                ),
+                padding: const EdgeInsets.only(top: 40, left: 20, right: 20),
                 child: Container(
+                  constraints: BoxConstraints(
+                    maxWidth: double.infinity,
+                  ),
+                  width: MediaQuery.of(context).size.width,
+
+                  // height: MediaQuery.of(context).size.height / 4,
                   // width: 320,
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10),
                   ),
 
-                  child: SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
-                        Padding(
-                          padding: const EdgeInsets.all(10.0),
-                          child: Container(
-                            child: Column(
-                              children: <Widget>[
-                                Container(
-                                  // width: 60,
-                                  padding: const EdgeInsets.all(5),
-                                  child: IconButton(
-                                    icon: Icon(
-                                      Icons.event_note_outlined,
-                                      size: 35,
-                                      color: Colors.white,
-                                    ),
-                                    onPressed: () =>
-                                        Get.toNamed(Routes.TAMBAH_TRANSAKSI),
+                        Container(
+                          child: Column(
+                            children: <Widget>[
+                              Container(
+                                // width: 60,
+                                padding: const EdgeInsets.all(5),
+                                child: IconButton(
+                                  icon: Icon(
+                                    Icons.event_note_outlined,
+                                    size: 35,
+                                    color: Colors.white,
                                   ),
-                                  decoration: BoxDecoration(
-                                    // color: const Color.fromRGBO(255, 0, 0, 1),
-                                    color: Color(0xFF540375),
-                                    borderRadius: BorderRadius.circular(50),
-                                  ),
+                                  onPressed: () =>
+                                      Get.toNamed(Routes.TAMBAH_TRANSAKSI),
                                 ),
-                                SizedBox(
-                                  width: 100,
-                                  child: Text(
-                                    'Tambah Transaksi',
-                                    textAlign: TextAlign.center,
-                                    style: GoogleFonts.poppins(
-                                      textStyle: TextStyle(
-                                        color: Colors.black,
-                                        fontSize: 16,
-                                      ),
+                                decoration: BoxDecoration(
+                                  // color: const Color.fromRGBO(255, 0, 0, 1),
+                                  color: Color(0xFF540375),
+                                  borderRadius: BorderRadius.circular(50),
+                                ),
+                              ),
+                              SizedBox(
+                                width: 100,
+                                child: Text(
+                                  'Tambah Transaksi',
+                                  textAlign: TextAlign.center,
+                                  style: GoogleFonts.poppins(
+                                    textStyle: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 16,
                                     ),
                                   ),
                                 ),
-                              ],
-                            ),
+                              ),
+                            ],
                           ),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.all(10.0),
-                          child: Container(
-                            child: Column(
-                              children: <Widget>[
-                                Container(
-                                  // width: 60,
-                                  padding: const EdgeInsets.all(5),
-                                  child: IconButton(
-                                    icon: Iconify(
-                                      Mdi.sticky_note_add_outline,
-                                      size: 35,
-                                      color: Colors.white,
-                                    ),
-                                    onPressed: () =>
-                                        Get.toNamed(Routes.TAMBAH_HUTANG),
+                        Container(
+                          child: Column(
+                            children: <Widget>[
+                              Container(
+                                // width: 60,
+                                padding: const EdgeInsets.all(5),
+                                child: IconButton(
+                                  icon: Iconify(
+                                    Mdi.sticky_note_add_outline,
+                                    size: 35,
+                                    color: Colors.white,
                                   ),
-                                  decoration: BoxDecoration(
-                                    // color: const Color.fromRGBO(175, 0, 0, 1),
-                                    color: Color(0xFFFED049),
-                                    borderRadius: BorderRadius.circular(50),
-                                  ),
+                                  onPressed: () =>
+                                      Get.toNamed(Routes.TAMBAH_HUTANG),
                                 ),
-                                SizedBox(
-                                  width: 100,
-                                  child: Text(
-                                    'Tambah Hutang',
-                                    textAlign: TextAlign.center,
-                                    style: GoogleFonts.poppins(
-                                      textStyle: TextStyle(
-                                        color: Colors.black,
-                                        fontSize: 16,
-                                      ),
+                                decoration: BoxDecoration(
+                                  // color: const Color.fromRGBO(175, 0, 0, 1),
+                                  color: Color(0xFFFED049),
+                                  borderRadius: BorderRadius.circular(50),
+                                ),
+                              ),
+                              SizedBox(
+                                width: 100,
+                                child: Text(
+                                  'Tambah Hutang',
+                                  textAlign: TextAlign.center,
+                                  style: GoogleFonts.poppins(
+                                    textStyle: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 16,
                                     ),
                                   ),
                                 ),
-                              ],
-                            ),
+                              ),
+                            ],
                           ),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.all(10.0),
-                          child: Container(
-                            child: Column(
-                              children: <Widget>[
-                                Container(
-                                  // width: 60,
-                                  padding: const EdgeInsets.all(5),
-                                  child: IconButton(
-                                    icon: Iconify(
-                                      Mdi.sticky_note_text_outline,
-                                      size: 35,
-                                      color: Colors.white,
-                                    ),
-                                    onPressed: () =>
-                                        Get.toNamed(Routes.TAMBAH_CATATAN),
+                        Container(
+                          child: Column(
+                            children: <Widget>[
+                              Container(
+                                // width: 60,
+                                padding: const EdgeInsets.all(5),
+                                child: IconButton(
+                                  icon: Iconify(
+                                    Mdi.sticky_note_text_outline,
+                                    size: 35,
+                                    color: Colors.white,
                                   ),
-                                  decoration: BoxDecoration(
-                                    // color: const Color.fromRGBO(175, 0, 0, 1),
-                                    color: Color(0xFF10A19D),
-                                    borderRadius: BorderRadius.circular(50),
-                                  ),
+                                  onPressed: () =>
+                                      Get.toNamed(Routes.TAMBAH_CATATAN),
                                 ),
-                                SizedBox(
-                                  width: 100,
-                                  child: Text(
-                                    'Tambah Catatan',
-                                    textAlign: TextAlign.center,
-                                    style: GoogleFonts.poppins(
-                                      textStyle: TextStyle(
-                                        color: Colors.black,
-                                        fontSize: 16,
-                                      ),
+                                decoration: BoxDecoration(
+                                  // color: const Color.fromRGBO(175, 0, 0, 1),
+                                  color: Color(0xFF10A19D),
+                                  borderRadius: BorderRadius.circular(50),
+                                ),
+                              ),
+                              SizedBox(
+                                width: 100,
+                                child: Text(
+                                  'Tambah Catatan',
+                                  textAlign: TextAlign.center,
+                                  style: GoogleFonts.poppins(
+                                    textStyle: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 16,
                                     ),
                                   ),
                                 ),
-                              ],
-                            ),
+                              ),
+                            ],
                           ),
                         ),
                       ],

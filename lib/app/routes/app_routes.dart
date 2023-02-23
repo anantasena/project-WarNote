@@ -24,6 +24,7 @@ abstract class Routes {
   static const EDIT_HUTANG = _Paths.EDIT_HUTANG;
   static const TAMBAH_CATATAN = _Paths.TAMBAH_CATATAN;
   static const EDIT_CATATAN = _Paths.EDIT_CATATAN;
+  static const DETAIL_PENGELUARAN = _Paths.DETAIL_PENGELUARAN;
 }
 
 abstract class _Paths {
@@ -47,4 +48,5 @@ abstract class _Paths {
   static const EDIT_HUTANG = '/edit-hutang';
   static const TAMBAH_CATATAN = '/tambah-catatan';
   static const EDIT_CATATAN = '/edit-catatan';
+  static const DETAIL_PENGELUARAN = '/detail-pengeluaran';
 }

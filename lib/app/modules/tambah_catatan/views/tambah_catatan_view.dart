@@ -121,7 +121,7 @@ class TambahCatatanView extends State<TambahCatatan> {
                       if (pickedDate != null) {
                         setState(() {
                           controller.tanggalC.text =
-                              DateFormat('yyyy-MM-dd').format(pickedDate);
+                              DateFormat.yMMMMd('en_US').format(pickedDate);
                         });
                       }
                     },

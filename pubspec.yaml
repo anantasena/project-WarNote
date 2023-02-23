@@ -22,12 +22,12 @@ dependencies:
   flutter_launcher_icons: ^0.11.0
   font_awesome_flutter: ^10.2.1
   get: 4.6.5
+  get_cli: ^1.7.1
   google_fonts: ^3.0.1
   iconify_flutter: ^0.0.5
   intl: ^0.17.0
   material_symbols: ^0.0.0
   persistent_bottom_nav_bar_ccc: ^5.0.1
-  share_plus: ^6.3.1
   unicons: ^2.1.0
   url_launcher: ^6.1.9
   validators: ^3.0.0

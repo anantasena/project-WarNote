@@ -8,6 +8,8 @@ import '../modules/catatan_hutang/bindings/catatan_hutang_binding.dart';
 import '../modules/catatan_hutang/views/catatan_hutang_view.dart';
 import '../modules/daftar/bindings/daftar_binding.dart';
 import '../modules/daftar/views/daftar_view.dart';
+import '../modules/detail_pengeluaran/bindings/detail_pengeluaran_binding.dart';
+import '../modules/detail_pengeluaran/views/detail_pengeluaran_view.dart';
 import '../modules/edit_catatan/bindings/edit_catatan_binding.dart';
 import '../modules/edit_catatan/views/edit_catatan_view.dart';
 import '../modules/edit_hutang/bindings/edit_hutang_binding.dart';
@@ -122,6 +124,11 @@ class AppPages {
       name: _Paths.EDIT_CATATAN,
       page: () => EditCatatan(),
       binding: EditCatatanBinding(),
+    ),
+    GetPage(
+      name: _Paths.DETAIL_PENGELUARAN,
+      page: () => const DetailPengeluaranView(),
+      binding: DetailPengeluaranBinding(),
     ),
   ];
 }

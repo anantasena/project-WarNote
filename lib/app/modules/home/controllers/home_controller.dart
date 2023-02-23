@@ -3,7 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:share_plus/share_plus.dart';
+// import 'package:share_plus/share_plus.dart';
 
 class HomeController extends GetxController {
   late TextEditingController namabarangC;

@@ -321,7 +321,7 @@ class TransaksiView extends State<Transaksi> {
               ),
               Padding(
                 padding: const EdgeInsets.only(
-                  top: 50,
+                  top: 88,
                 ),
                 child: Container(
                   width: 360,
@@ -368,6 +368,7 @@ class TransaksiView extends State<Transaksi> {
                             return listAllDocs.length > 0
                                 ? Flexible(
                                     child: ListView.builder(
+                                      scrollDirection: Axis.vertical,
                                       shrinkWrap: true,
                                       itemCount: listAllDocs.length,
                                       itemBuilder: (context, index) => Padding(

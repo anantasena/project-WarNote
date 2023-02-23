@@ -65,7 +65,7 @@ class TambahHutangView extends State<TambahHutang> {
                       prefixIcon: Padding(
                         padding: EdgeInsets.all(8.0),
                         child: Iconify(
-                          Mdi.cart,
+                          Mdi.person,
                           color: Colors.blue,
                           size: 20,
                         ),
