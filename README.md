@@ -2,7 +2,7 @@
 #
 ----PROJECT APLIKASI MOBILE "WarNote"----
 #
-TIM:
-- Dhifan Julda Antasena
-- Imran Muhamad Rafi
-- Kevin Kurniawan Handoko
+ANGGOTA KELOMPOK 6:
+- Dhifan Julda Antasena (20200120053)
+- Imran Muhamad Rafi (20200120046)
+- Kevin Kurniawan Handoko (20200120038)
